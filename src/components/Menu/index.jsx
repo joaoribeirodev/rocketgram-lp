@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import * as S from "./style";
 
 import Button from "../Button";
@@ -8,53 +10,53 @@ function Menu() {
     <S.Container>
       <S.WrapLinkAndImage>
         <li>
-          <a href="/">
+          <Link href="/">
             <img
               className="logo"
               src="/images/logo.svg"
               alt="Logotipo rocketgram"
             />
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a className="linkmenu" href="/carecteristicas">
+          <Link className="linkmenu" href="/carecteristicas">
             Características
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a className="linkmenu" href="/precos">
+          <Link className="linkmenu" href="/precos">
             Preços
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a className="linkmenu" href="/contato">
+          <Link className="linkmenu" href="/contato">
             Contate-nos
-          </a>
+          </Link>
 
           <ul>
             <li>
               <img src="/images/icons/icon-idea-gray.png" alt="icone ideia" />
-              <a href="#">Central de ajuda</a>
+              <Link href="#">Central de ajuda</Link>
             </li>
 
             <li>
               <img src="/images/icons/icon-chat-gray.png" alt="icone chat" />
-              <a href="#">Suporte online</a>
+              <Link href="#">Suporte online</Link>
             </li>
 
             <li>
               <img src="/images/icons/icon-mail-gray.png" alt="icone chat" />
-              <a href="#">contato@rocketgram.com.br</a>
+              <Link href="#">contato@rocketgram.com.br</Link>
             </li>
           </ul>
         </li>
       </S.WrapLinkAndImage>
 
       <S.WrapButtons>
-        <a href="/login">Entrar</a>
+        <Link href="/login">Entrar</Link>
 
         <Button>Teste grátis por 7 dias</Button>
       </S.WrapButtons>

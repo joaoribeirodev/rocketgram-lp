@@ -1,10 +1,21 @@
+/* eslint-disable react/prop-types */
 import React from "react";
+import Link from "next/link";
+
 import * as S from "./styles";
 
-function Button({ children }) {
+function Button({ width, height, outline, color, bg, children }) {
   return (
-    <S.Container>
-      <span tabIndex="-1">{children}</span>
+    <S.Container
+      width={width}
+      height={height}
+      outline={outline}
+      color={color}
+      bg={bg}
+    >
+      <span tabIndex="-1">
+        <Link href="/">{children}</Link>
+      </span>
     </S.Container>
   );
 }

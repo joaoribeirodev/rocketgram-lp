@@ -7,6 +7,8 @@ export const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 999;
 `;
 
 export const WrapLinkAndImage = styled.ul`
