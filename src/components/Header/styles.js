@@ -29,4 +29,12 @@ export const Container = styled.header`
       color: #1bbef6;
     }
   }
+
+  h1.center {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: #38424f;
+  }
 `;

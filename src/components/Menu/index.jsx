@@ -10,17 +10,17 @@ function Menu() {
     <S.Container>
       <S.WrapLinkAndImage>
         <li>
-          <Link href="/">
+          <a href="/">
             <img
               className="logo"
               src="/images/logo.svg"
               alt="Logotipo rocketgram"
             />
-          </Link>
+          </a>
         </li>
 
         <li>
-          <Link className="linkmenu" href="/carecteristicas">
+          <Link className="linkmenu" href="/gerenciamento">
             Características
           </Link>
         </li>
@@ -32,7 +32,7 @@ function Menu() {
         </li>
 
         <li>
-          <Link className="linkmenu" href="/contato">
+          <Link className="linkmenu" href="/ajuda">
             Contate-nos
           </Link>
 
