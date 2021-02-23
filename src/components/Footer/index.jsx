@@ -67,8 +67,8 @@ function Footer() {
       </div>
 
       <p>
-        <span>© 2021 . Todos os direitos reservados</span> . Termos de Uso e
-        Política de Privacidade
+        <span>© {new Date().getFullYear()} . Todos os direitos reservados</span>{" "}
+        . Termos de Uso e Política de Privacidade
       </p>
     </S.Container>
   );

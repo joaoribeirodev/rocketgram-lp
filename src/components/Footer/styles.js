@@ -6,6 +6,25 @@ export const Container = styled.footer`
   justify-content: space-around;
   flex-wrap: wrap;
 
+  @media (max-width: 960px) {
+    flex-direction: column;
+    padding: 20px;
+
+    img {
+      margin-top: 10px !important;
+      margin-bottom: 30px;
+      width: 124px !important;
+    }
+
+    & > div {
+      height: auto;
+
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+
   p {
     color: #fff;
     font-weight: 500;

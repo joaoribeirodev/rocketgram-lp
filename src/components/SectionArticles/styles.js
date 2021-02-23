@@ -5,6 +5,10 @@ export const Container = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 960px) {
+    padding: 45px 20px;
+  }
 `;
 
 export const Article = styled.article`
@@ -30,6 +34,13 @@ export const Article = styled.article`
 
     span {
       color: #4882eb;
+    }
+  }
+
+  @media (max-width: 960px) {
+    h2 {
+      font-size: 18px !important;
+      line-height: 24px;
     }
   }
 `;

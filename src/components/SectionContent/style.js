@@ -7,6 +7,10 @@ export const Container = styled.section`
   align-items: center;
   ${({ reverse }) => (reverse ? "flex-direction: row-reverse" : "")};
 
+  img.img-mobile {
+    display: none;
+  }
+
   div.icon {
     display: flex;
     width: 100%;
@@ -28,6 +32,10 @@ export const Container = styled.section`
 
   .image {
     ${({ reverse }) => (reverse ? "margin-left: 80px" : "margin-right: 80px")};
+
+    @media (max-width: 960px) {
+      display: none;
+    }
   }
 
   .buttons {
@@ -35,6 +43,17 @@ export const Container = styled.section`
 
     button:first-of-type {
       margin-right: 16px;
+    }
+
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      button:first-of-type {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
     }
   }
 
@@ -44,6 +63,11 @@ export const Container = styled.section`
     margin: 0;
     margin-bottom: 16px;
     color: #38424f;
+
+    @media (max-width: 960px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   p {
@@ -51,5 +75,14 @@ export const Container = styled.section`
     color: #adabb5;
     margin: 0;
     margin-bottom: 56px;
+  }
+
+  @media (max-width: 960px) {
+    padding: 80px 10px;
+
+    img.img-mobile {
+      display: block;
+      margin: 30px 0;
+    }
   }
 `;

@@ -42,6 +42,14 @@ export default function Organize() {
 
           <h2>Configure seus bots e ganhe mais agilidade no atendimento</h2>
 
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/bot-automation.svg"
+            tabIndex={-1}
+          />
+
           <p>
             Programe seu bot para responder às principais dúvidas dos usuários e
             gatilhos gerados pelas plataformas de vendas, aumentendo a

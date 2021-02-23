@@ -43,6 +43,14 @@ export default function Integracoes() {
             mercado
           </h2>
 
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/trigger.svg"
+            tabIndex={-1}
+          />
+
           <p>
             Com as integrações, você poderá configurar os robôs para interagir
             com cada gatilho recebido pela sua plataforma de e-commerce

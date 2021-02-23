@@ -38,6 +38,41 @@ export const Container = styled.section`
       margin-bottom: 32px;
     }
   }
+
+  @media (max-width: 960px) {
+    padding: 45px 20px;
+
+    h2 {
+      font-size: 18px !important;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+
+    a {
+      height: 56px;
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 24px;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+      }
+
+      img {
+        display: inline-block;
+        margin: 0;
+        width: 30px;
+        margin-right: 15px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
 `;
 
 export const Wrap = styled.div`

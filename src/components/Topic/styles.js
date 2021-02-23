@@ -31,4 +31,8 @@ export const Container = styled.article`
   a {
     color: #4882eb;
   }
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;

@@ -58,4 +58,23 @@ export const Container = styled.header`
       }
     }
   }
+
+  @media (max-width: 960px) {
+    padding: 80px 20px;
+    background-position: 0 0;
+
+    h1 {
+      font-size: 24px !important;
+      line-height: 32px;
+    }
+
+    div.input {
+      width: 100%;
+      padding-left: 5px;
+
+      input {
+        font-size: 12px !important;
+      }
+    }
+  }
 `;

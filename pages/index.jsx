@@ -39,6 +39,14 @@ export default function Home() {
             Faça a gestão dos seus grupos com facilidade, rapidez e eficiência
           </h2>
 
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/manage.svg"
+            tabIndex={-1}
+          />
+
           <p>
             Nossas ferramentas são projetadas para atender com qualidade
             qualquer canal ou grupo no Telegram. Planeje, configure os bots e
@@ -69,6 +77,14 @@ export default function Home() {
           </div>
 
           <h2>Acompanhe as métricas dos seus grupos no Telegram</h2>
+
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/analyze.svg"
+            tabIndex={-1}
+          />
 
           <p>
             Obtenha dados de atividades nos seus grupos e canais do Telegram
@@ -105,6 +121,14 @@ export default function Home() {
             Crie robôs para organizar seu atendimento de forma automatizada
           </h2>
 
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/organize.svg"
+            tabIndex={-1}
+          />
+
           <p>
             Ofereça uma experiência personalizada e eficiente para os seus
             clientes através dos nossos robôs de atendimento.
@@ -140,6 +164,14 @@ export default function Home() {
             Conecte o Rocketgram às principais plataformas de e-commerce do
             mercado
           </h2>
+
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/integrations.svg"
+            tabIndex={-1}
+          />
 
           <p>
             Configure os gatilhos e eventos para garantir a execução da sua

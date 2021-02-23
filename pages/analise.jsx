@@ -41,6 +41,14 @@ export default function Analise() {
             Analise o comportamento dos membros do grupo para obter insights
           </h2>
 
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/trend.svg"
+            tabIndex={-1}
+          />
+
           <p>
             Descubra tendências a partir dos hábitos de seus contatos para gerar
             dados valiosos e melhorar cada vez mais a sua estratégia de

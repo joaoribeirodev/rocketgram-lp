@@ -3,6 +3,16 @@ import styled from "styled-components";
 export const Container = styled.section`
   padding: 80px;
 
+  @media (max-width: 960px) {
+    padding: 80px 20px;
+
+    footer {
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+
   h2 {
     font-weight: bold;
     font-size: 32px;

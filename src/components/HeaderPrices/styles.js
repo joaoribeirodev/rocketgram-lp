@@ -29,21 +29,43 @@ export const Container = styled.header`
       display: block;
     }
   }
+
+  @media (max-width: 960px) {
+    padding: 80px 10px;
+
+    h1 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    small {
+      font-size: 18px !important;
+      line-height: 24px;
+      text-align: center;
+      font-weight: normal !important;
+    }
+  }
 `;
 
 export const Wrap = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 `;
 
 export const Prices = styled.div`
   width: 350px;
+  max-width: 95%;
   background: #ffffff;
   border: 1px solid #e4e4e4;
   box-sizing: border-box;
   border-radius: 4px;
   margin-right: 16px;
   padding: 24px 47px;
+
+  @media (max-width: 960px) {
+    margin: 20px auto;
+  }
 
   h2 {
     font-weight: bold;

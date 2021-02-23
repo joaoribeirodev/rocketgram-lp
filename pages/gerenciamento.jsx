@@ -45,6 +45,14 @@ export default function Gerenciamento() {
             gerenciando
           </h2>
 
+          <img
+            className="img-mobile"
+            width="100%"
+            loading="lazy"
+            src="/images/group-and-contact.svg"
+            tabIndex={-1}
+          />
+
           <p>
             Através do nosso painel, você terá acesso a todo o histórico de
             dados e contatos dos grupos que você estiver gerenciando para

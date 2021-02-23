@@ -12,6 +12,16 @@ export const Container = styled.section`
     margin-bottom: 64px;
     text-align: center;
   }
+
+  @media (max-width: 960px) {
+    padding: 80px 20px;
+
+    h2 {
+      font-size: 24px !important;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
+  }
 `;
 
 export const WrapTestimonials = styled.div`
@@ -56,6 +66,22 @@ export const Testimonials = styled.div`
       font-size: 14px;
       display: block;
       color: #adabb5;
+    }
+  }
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+
+    img {
+      left: 0;
+      top: 20px;
+      width: 56px;
+      height: 56px;
+    }
+
+    div.info {
+      padding: 10px;
+      padding-top: 40px;
     }
   }
 `;

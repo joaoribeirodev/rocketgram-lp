@@ -17,6 +17,12 @@ export const WrapLinkAndImage = styled.ul`
   list-style: none;
   margin: 0;
 
+  @media (max-width: 996px) {
+    li:not(:first-of-type) {
+      display: none;
+    }
+  }
+
   img.logo {
     margin-right: 100px;
   }
@@ -92,11 +98,120 @@ export const WrapButtons = styled.div`
   justify-content: center;
   align-items: center;
 
+  button.menu-mobile {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: none;
+
+    img {
+      outline: none;
+    }
+  }
+
   a {
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
     color: #4882eb;
     margin-right: 25px;
+  }
+
+  @media (max-width: 996px) {
+    button.menu-mobile {
+      display: block;
+    }
+
+    button:first-of-type {
+      display: none;
+    }
+
+    a {
+      display: none;
+    }
+  }
+`;
+
+export const MenuMobile = styled.div`
+  position: fixed;
+  background: #fff;
+  padding: 15px;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: transform 0.2s ease-in;
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+
+  div.wrap-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > a {
+      border: 1px solid #4882eb;
+      box-sizing: border-box;
+      border-radius: 4px;
+      display: block;
+      width: 296px;
+      height: 48px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      color: #4882eb;
+      line-height: 48px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+
+  div.logo-and-close {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+
+      img {
+        outline: none;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 260px;
+
+    li {
+      font-size: 16px;
+      line-height: 21px;
+      color: #adabb5;
+      margin-bottom: 24px;
+
+      &:hover > ul {
+        display: inline-block;
+      }
+
+      ul {
+        padding: 20px;
+        display: none;
+
+        li {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          color: #38424f;
+        }
+      }
+    }
   }
 `;
