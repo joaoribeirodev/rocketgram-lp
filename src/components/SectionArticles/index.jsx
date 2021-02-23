@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import * as S from "./styles";
 
 function SectionArticles({ children }) {
   const [query, setQuery] = useState("");
+  const router = useRouter();
 
   useEffect(
     () =>
@@ -20,6 +22,7 @@ function SectionArticles({ children }) {
           <img
             src="/images/icons/icon-arrow-left-gray.svg"
             alt="ícone de flecha apontando para esquerda"
+            onClick={() => router.back()}
           />
           <h2>
             Artigos populares sobre <span>{query}</span>

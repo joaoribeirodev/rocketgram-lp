@@ -51,7 +51,7 @@ function FAQ() {
       <footer>
         <p>
           Não encontrou o que procurava?{" "}
-          <Link href="/ajuda/precos">Visite a nossa Central de Ajuda</Link>.
+          <Link href="/ajuda">Visite a nossa Central de Ajuda</Link>.
         </p>
       </footer>
     </S.Container>

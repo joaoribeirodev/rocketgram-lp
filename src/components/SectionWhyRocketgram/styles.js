@@ -51,8 +51,21 @@ export const ListWhyRocketgram = styled.ul`
     margin: 0 auto;
   }
 
+  & > img.image-mobile {
+    display: none;
+  }
+
   @media (max-width: 960px) {
     justify-content: center;
+
+    & > img.image-mobile {
+      display: block;
+      width: 100%;
+    }
+
+    & > img {
+      display: none;
+    }
   }
 `;
 

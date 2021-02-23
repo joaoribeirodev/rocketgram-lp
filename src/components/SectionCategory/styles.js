@@ -13,7 +13,7 @@ export const Container = styled.section`
     color: #38424f;
   }
 
-  a {
+  div.pai {
     display: inline-block;
     width: 204px;
     height: 204px;
@@ -48,7 +48,7 @@ export const Container = styled.section`
       margin-bottom: 24px;
     }
 
-    a {
+    div.pai {
       height: 56px;
       margin-right: 0;
       width: 100%;

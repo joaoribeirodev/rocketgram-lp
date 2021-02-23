@@ -25,6 +25,7 @@ export const WrapLinkAndImage = styled.ul`
 
   img.logo {
     margin-right: 100px;
+    cursor: pointer;
   }
 
   li {
@@ -36,7 +37,7 @@ export const WrapLinkAndImage = styled.ul`
       display: block;
     }
 
-    &:hover > a.linkmenu {
+    &:hover > a {
       color: #4882eb;
     }
 
@@ -198,7 +199,7 @@ export const MenuMobile = styled.div`
       margin-bottom: 24px;
 
       &:hover > ul {
-        display: inline-block;
+        display: block;
       }
 
       ul {

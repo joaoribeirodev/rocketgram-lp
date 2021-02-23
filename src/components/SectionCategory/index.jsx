@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import * as S from "./styles";
 
@@ -8,85 +9,104 @@ function SectionCategory() {
       <h2>Pesquisar por categoria</h2>
 
       <S.Wrap>
-        <a href="/ajuda/precos-e-pagamento?v=Preços e pagamento">
-          <div>
-            <img
-              src="/images/icons/icon-billing-green.svg"
-              alt="ícone de carteira"
-            />
-            <p>Preços e pagamento</p>
+        <Link href="/ajuda/precos-e-pagamento?v=Preços e pagamento">
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-billing-green.svg"
+                alt="ícone de carteira"
+              />
+              <p>Preços e pagamento</p>
+            </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/ajuda/caracteristicas?v=Características">
-          <div>
-            <img
-              src="/images/icons/icon-stars-blue.svg"
-              alt="ícone de carteira"
-            />
-            <p>Características</p>
+        <Link href="/ajuda/caracteristicas?v=Características">
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-stars-blue.svg"
+                alt="ícone de carteira"
+              />
+              <p>Características</p>
+            </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/ajuda/integracoes?v=Integrações">
-          <div>
-            <img
-              src="/images/icons/icon-b-integrations-blue.svg"
-              alt="ícone de carteira"
-            />
-            <p>Integrações</p>
+        <Link href="/ajuda/integracoes?v=Integrações">
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-b-integrations-blue.svg"
+                alt="ícone de carteira"
+              />
+              <p>Integrações</p>
+            </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/ajuda/primeiros-passos?v=Primeiros passos" className="mr-0">
-          <div>
-            <img
-              src="/images/icons/icon-b-idea-yellow.svg"
-              alt="ícone de carteira"
-            />
-            <p>Primeiros passos</p>
+        <Link
+          href="/ajuda/primeiros-passos?v=Primeiros passos"
+          className="mr-0"
+        >
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-b-idea-yellow.svg"
+                alt="ícone de carteira"
+              />
+              <p>Primeiros passos</p>
+            </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/ajuda/privacidade?v=Privacidade">
-          <div>
-            <img
-              src="/images/icons/icon-lock-blue.svg"
-              alt="ícone de carteira"
-            />
-            <p>Privacidade</p>
+        <Link href="/ajuda/privacidade?v=Privacidade">
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-lock-blue.svg"
+                alt="ícone de carteira"
+              />
+              <p>Privacidade</p>
+            </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/ajuda/minha-conta?v=Minha conta">
-          <div>
-            <img
-              src="/images/icons/icon-emoji-red.svg"
-              alt="ícone de carteira"
-            />
-            <p>Minha conta</p>
+        <Link href="/ajuda/minha-conta?v=Minha conta">
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-emoji-red.svg"
+                alt="ícone de carteira"
+              />
+              <p>Minha conta</p>
+            </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/ajuda/gerenciamento?v=Gerenciamento">
-          <div>
-            <img
-              src="/images/icons/icon-b-settings-orange.svg"
-              alt="ícone de carteira"
-            />
-            <p>Gerenciamento</p>
+        <Link href="/ajuda/gerenciamento?v=Gerenciamento">
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-b-settings-orange.svg"
+                alt="ícone de carteira"
+              />
+              <p>Gerenciamento</p>
+            </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/ajuda/outros?v=Outros" className="mr-0">
-          <div>
-            <img
-              src="/images/icons/icon-options-gray.svg"
-              alt="ícone de carteira"
-            />
-            <p>Outros</p>
+        <Link href="/ajuda/outros?v=Outros" className="mr-0">
+          <div className="pai">
+            <div>
+              <img
+                src="/images/icons/icon-options-gray.svg"
+                alt="ícone de carteira"
+              />
+              <p>Outros</p>
+            </div>
           </div>
-        </a>
+        </Link>
       </S.Wrap>
     </S.Container>
   );

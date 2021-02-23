@@ -64,6 +64,7 @@ export default function Home() {
               outline
               bg="transparent"
               color="4882EB"
+              href="gerenciamento"
             >
               Mais sobre gerenciamento
             </Button>
@@ -102,6 +103,7 @@ export default function Home() {
               outline
               bg="transparent"
               color="4882EB"
+              href="/analise"
             >
               Mais sobre métricas
             </Button>
@@ -145,6 +147,7 @@ export default function Home() {
               outline
               bg="transparent"
               color="4882EB"
+              href="/organize"
             >
               Mais sobre organização
             </Button>
@@ -189,6 +192,7 @@ export default function Home() {
               outline
               bg="transparent"
               color="4882EB"
+              href="/integracoes"
             >
               Mais sobre integrações
             </Button>

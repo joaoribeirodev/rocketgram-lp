@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import * as S from "./styles";
 
 function SectionArticleTwo({ children }) {
+  const router = useRouter();
+
   return (
     <S.Container>
       <S.Article>
@@ -12,6 +15,7 @@ function SectionArticleTwo({ children }) {
           <img
             src="/images/icons/icon-arrow-left-gray.svg"
             alt="ícone de flecha apontando para esquerda"
+            onClick={() => router.back()}
           />
 
           <div>{children}</div>

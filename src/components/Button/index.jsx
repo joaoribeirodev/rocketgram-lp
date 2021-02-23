@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import * as S from "./styles";
 
-function Button({ width, height, outline, color, bg, children }) {
+function Button({ width, height, outline, color, bg, href, children }) {
   return (
     <S.Container
       width={width}
@@ -14,7 +14,7 @@ function Button({ width, height, outline, color, bg, children }) {
       bg={bg}
     >
       <span tabIndex="-1">
-        <Link href="/">{children}</Link>
+        <Link href={href ? href : "/"}>{children}</Link>
       </span>
     </S.Container>
   );

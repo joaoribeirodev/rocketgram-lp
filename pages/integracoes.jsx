@@ -68,6 +68,12 @@ export default function Integracoes() {
 
         <SectionWhyRocketgram title="Integre com as principais plataformas do mercado">
           <img src="/images/ecommerce-platforms.png" alt="ecommerce" />
+
+          <img
+            src="/images/integration-mobile.svg"
+            alt="ecommerce"
+            className="image-mobile"
+          />
         </SectionWhyRocketgram>
 
         <Banner />

@@ -12,13 +12,13 @@ function Menu() {
     <S.Container>
       <S.WrapLinkAndImage>
         <li>
-          <a href="/">
+          <Link href="/">
             <img
               className="logo"
               src="/images/logo.svg"
               alt="Logotipo rocketgram"
             />
-          </a>
+          </Link>
         </li>
 
         <li>

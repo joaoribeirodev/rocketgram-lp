@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import * as S from "./styles";
 
 function Footer() {
@@ -11,19 +13,19 @@ function Footer() {
 
         <ul>
           <li>
-            <a href="#">Robôs de atendimento</a>
+            <Link href="/gerenciamento">Robôs de atendimento</Link>
           </li>
           <li>
-            <a href="#">Gerenciamento de grupos</a>
+            <Link href="/gerenciamento">Gerenciamento de grupos</Link>
           </li>
           <li>
-            <a href="#">Gerenciamento de produtos</a>
+            <Link href="/gerenciamento">Gerenciamento de produtos</Link>
           </li>
           <li>
-            <a href="#">Gerenciamento de contatos</a>
+            <Link href="/gerenciamento">Gerenciamento de contatos</Link>
           </li>
           <li>
-            <a href="#">Integrações</a>
+            <Link href="/integracoes">Integrações</Link>
           </li>
         </ul>
       </div>
@@ -33,7 +35,7 @@ function Footer() {
 
         <ul>
           <li>
-            <a href="#">Monte seu plano</a>
+            <Link href="/precos">Monte seu plano</Link>
           </li>
         </ul>
       </div>
@@ -43,7 +45,7 @@ function Footer() {
 
         <ul>
           <li>
-            <a href="#">Leia nossos artigos</a>
+            <Link href="#">Leia nossos artigos</Link>
           </li>
         </ul>
       </div>
@@ -53,15 +55,15 @@ function Footer() {
 
         <ul>
           <li>
-            <a href="#">Central de Ajuda</a>
+            <Link href="/ajuda">Central de Ajuda</Link>
           </li>
 
           <li>
-            <a href="#">Suporte online</a>
+            <Link href="/ajuda">Suporte online</Link>
           </li>
 
           <li>
-            <a href="#">contato@rocketgram.com.br</a>
+            <Link href="/ajuda">contato@rocketgram.com.br</Link>
           </li>
         </ul>
       </div>
