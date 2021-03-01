@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
@@ -37,11 +38,16 @@ function Category({ result }) {
 }
 
 export async function getServerSideProps(context) {
+  let result = [];
+
   const data = await fetch(
-    `http://localhost:3000/api/categories/${context.params.category}`
+    `${process.env.API_URL}/api/categories/${context.params.category}`
   );
-  const json = await data.json();
-  const result = json;
+
+  if (data.ok) {
+    const json = await data?.json();
+    result = json;
+  }
 
   return {
     props: { result },

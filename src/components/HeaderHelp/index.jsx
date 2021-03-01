@@ -1,14 +1,28 @@
 import React, { useState, useCallback, useEffect } from "react";
+import { useRouter } from "next/router";
+import * as urlSlug from "url-slug";
 
 import * as S from "./styles";
 
 function HeaderHelp() {
   const [value, setValue] = useState("");
   const [disabled, setDisabled] = useState(true);
+  const router = useRouter();
 
   const changeValue = useCallback(({ target }) => setValue(target.value), [
     value,
   ]);
+
+  const searchEvent = useCallback(() => {
+    const slug = urlSlug.convert(value, {
+      separator: "-",
+      transformer: false,
+    });
+
+    const upperFirstLetter = `${value[0].toUpperCase()}${value.slice(1)}`;
+
+    router.push(`/ajuda/${slug}?v=${upperFirstLetter}`);
+  }, [value]);
 
   useEffect(() => setDisabled(!value), [value]);
 
@@ -26,7 +40,9 @@ function HeaderHelp() {
           placeholder="Digite a sua dúvida aqui"
         />
 
-        <button disabled={disabled}>Pesquisar</button>
+        <button disabled={disabled} onClick={searchEvent}>
+          Pesquisar
+        </button>
       </div>
     </S.Container>
   );

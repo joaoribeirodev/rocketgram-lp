@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
@@ -28,11 +29,16 @@ function Article({ result }) {
 }
 
 export async function getServerSideProps(context) {
+  let result = [];
+
   const data = await fetch(
-    `http://localhost:3000/api/articles/${context.params.content}`
+    `${process.env.API_URL}/api/articles/${context.params.content}`
   );
-  const json = await data.json();
-  const result = json;
+
+  if (data.ok) {
+    const json = await data.json();
+    result = json;
+  }
 
   return {
     props: { result },

@@ -23,6 +23,7 @@ export const Container = styled.section`
     border-radius: 4px;
     margin-bottom: 56px;
     margin-right: 64px;
+    cursor: pointer;
 
     img {
       display: block;
